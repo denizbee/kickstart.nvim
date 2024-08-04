@@ -68,4 +68,17 @@ return {
       { '<c-\\>', '<cmd><C-U>TmuxNavigatePrevious<cr>' },
     },
   },
+
+  {
+    'lukas-reineke/indent-blankline.nvim',
+    main = 'ibl',
+    config = function()
+      require('ibl').setup {
+        indent = {
+          char = '│',
+          tab_char = '│',
+        },
+      }
+    end,
+  },
 }
