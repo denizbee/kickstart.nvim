@@ -772,21 +772,6 @@ require('lazy').setup({
     'folke/tokyonight.nvim',
   },
 
-  {
-    'nyoom-engineering/oxocarbon.nvim',
-  },
-
-  {
-    'Mofiqul/vscode.nvim',
-    config = function()
-      require('vscode').setup {
-        transparent = true,
-        disable_nvimtree_bg = true,
-        italic_comments = true,
-      }
-    end,
-  },
-
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 

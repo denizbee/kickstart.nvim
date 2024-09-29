@@ -3,7 +3,6 @@
 --
 -- See the kickstart.nvim README for more information
 return {
-  { 'tpope/vim-fugitive' },
 
   { 'windwp/nvim-ts-autotag', opts = {} },
 
@@ -111,6 +110,21 @@ return {
       }
       -- You probably also want to set a keymap to toggle aerial
       vim.keymap.set('n', '<leader>a', '<cmd>AerialToggle float<CR>', { desc = 'Open [A]erial' })
+    end,
+  },
+
+  {
+    'nyoom-engineering/oxocarbon.nvim',
+  },
+
+  {
+    'Mofiqul/vscode.nvim',
+    config = function()
+      require('vscode').setup {
+        transparent = true,
+        disable_nvimtree_bg = true,
+        italic_comments = true,
+      }
     end,
   },
 }
