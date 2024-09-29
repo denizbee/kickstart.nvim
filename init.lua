@@ -776,7 +776,16 @@ require('lazy').setup({
     'nyoom-engineering/oxocarbon.nvim',
   },
 
-  { 'Mofiqul/vscode.nvim' },
+  {
+    'Mofiqul/vscode.nvim',
+    config = function()
+      require('vscode').setup {
+        transparent = true,
+        disable_nvimtree_bg = true,
+        italic_comments = true,
+      }
+    end,
+  },
 
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
@@ -893,5 +902,6 @@ require('lazy').setup({
 
 vim.opt.background = 'dark' -- set this to dark or light
 vim.cmd.colorscheme 'vscode'
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
