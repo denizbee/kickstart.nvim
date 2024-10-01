@@ -46,9 +46,6 @@ return {
 
       require('nvim-tree').setup {
         on_attach = nvim_tree_on_attach,
-        view = {
-          side = 'right',
-        },
       }
     end,
   },
