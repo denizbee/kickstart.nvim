@@ -548,7 +548,7 @@ require('lazy').setup({
           filetypes = { 'html', 'vue', 'javascript' },
         },
         gopls = {},
-        clangd = {},
+        -- clangd = {},
         pyright = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
@@ -634,11 +634,10 @@ require('lazy').setup({
       end,
       formatters_by_ft = {
         lua = { 'stylua' },
-        c = { 'clang-format' },
-        cpp = { 'clang-format' },
         javascript = { 'prettierd' },
         html = { 'prettierd' },
         vue = { 'prettierd' },
+        -- Conform can also run multiple formatters sequentially
         python = { 'black' },
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
