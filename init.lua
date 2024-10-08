@@ -548,7 +548,7 @@ require('lazy').setup({
           filetypes = { 'html', 'vue', 'javascript' },
         },
         gopls = {},
-        -- clangd = {},
+        clangd = {},
         pyright = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
