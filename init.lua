@@ -609,7 +609,7 @@ require('lazy').setup({
         },
         eslint = {},
         prettierd = {},
-        volar = {},
+        vue_ls = {},
         --
 
         lua_ls = {
