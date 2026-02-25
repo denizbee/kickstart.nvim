@@ -709,16 +709,16 @@ require('lazy').setup({
       ---@diagnostic disable-next-line: missing-fields
       require('kanagawa').setup {
         commentStyle = { italic = false }, -- Disable italics in comments
-        transparent = true,
-        colors = {
-          theme = {
-            all = {
-              ui = {
-                bg_gutter = 'none',
-              },
-            },
-          },
-        },
+        -- transparent = true,
+        -- colors = {
+        --   theme = {
+        --     all = {
+        --       ui = {
+        --         bg_gutter = 'none',
+        --       },
+        --     },
+        --   },
+        -- },
       }
 
       -- Load the colorscheme here.
@@ -807,7 +807,11 @@ require('lazy').setup({
   -- you can continue same window with `<space>sr` which resumes last telescope search
 }, {})
 
-if vim.g.neovide then vim.o.guifont = 'RobotoMono Nerd Font:h12' end
+if vim.g.neovide then
+  vim.o.guifont = 'RobotoMono Nerd Font:h12'
+  vim.g.neovide_highlight_matching_pair = true
+  vim.g.neovide_input_macos_option_key_is_meta = 'only_left'
+end
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
