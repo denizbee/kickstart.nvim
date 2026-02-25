@@ -813,7 +813,7 @@ require('lazy').setup({
   -- you can continue same window with `<space>sr` which resumes last telescope search
 }, {})
 
-if vim.g.neovide then vim.o.guifont = 'RobotoMono Nerd Font:h14' end
+if vim.g.neovide then vim.o.guifont = 'RobotoMono Nerd Font:h12' end
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
