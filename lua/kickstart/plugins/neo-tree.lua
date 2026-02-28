@@ -14,6 +14,7 @@ return {
     { '<leader>e', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
   },
   opts = {
+    toggle = true,
     filesystem = {
       window = {
         mappings = {
